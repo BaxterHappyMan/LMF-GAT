@@ -1,0 +1,121 @@
+GAT:
+  in_channels: 40
+  out_channels: 32
+  num_heads: 4
+  out_channels_1: 64
+  out_channels_2: 16
+  out_channels_3: 2
+  win_len: 2048
+  hop_len: 512
+  n_fft: 2048
+  n_mel: 40
+  sample_rate: 16000
+  lr: 0.001
+  batch_size: 4
+  epochs: 50
+  Data_1:
+    dataset_root: '/workspace/First/ENFI-GraphDatasets/Sensor'
+    dataset_normal: 'UnloaderValveN.npz'
+    dataset_anomaly: 'UnloaderValveA.npz'
+    normal_vs_anomaly: 1
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+  Data_2:
+    dataset_root: '/workspace/First/ENFI-GraphDatasets/Sensor'
+    dataset_normal: 'UnloaderValveN.npz'
+    dataset_anomaly: 'UnloaderValveA.npz'
+    normal_vs_anomaly: 2
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+  Data_3:
+    dataset_root: '/workspace/First/ENFI-GraphDatasets/Sensor'
+    dataset_normal: 'UnloaderValveN.npz'
+    dataset_anomaly: 'UnloaderValveA.npz'
+    normal_vs_anomaly: 3
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+  Data_4:
+    dataset_root: '/workspace/First/ENFI-GraphDatasets/Sensor'
+    dataset_normal: 'UnloaderValveN.npz'
+    dataset_anomaly: 'UnloaderValveA.npz'
+    normal_vs_anomaly: 4
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+  Data_5:
+    dataset_root: '/workspace/First/ENFI-GraphDatasets/Phone'
+    dataset_normal: 'PrimaryAirFanN.npz'
+    dataset_anomaly: 'PrimaryAirFanA.npz'
+    normal_vs_anomaly: 1
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+  Data_6:
+    dataset_root: '/workspace/First/ENFI-GraphDatasets/Phone'
+    dataset_normal: 'PrimaryAirFanN.npz'
+    dataset_anomaly: 'PrimaryAirFanA.npz'
+    normal_vs_anomaly: 2
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+  Data_7:
+    dataset_root: '/workspace/First/ENFI-GraphDatasets/Phone'
+    dataset_normal: 'PrimaryAirFanN.npz'
+    dataset_anomaly: 'PrimaryAirFanA.npz'
+    normal_vs_anomaly: 3
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+  Data_8:
+    dataset_root: '/workspace/First/ENFI-GraphDatasets/Phone'
+    dataset_normal: 'PrimaryAirFanN.npz'
+    dataset_anomaly: 'PrimaryAirFanA.npz'
+    normal_vs_anomaly: 4
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+
+  Data_9:
+    dataset_root: '/workspace/First/DCASE-GraphDatasets'
+    dataset_normal: 'dev_bearingN.npz'
+    dataset_anomaly: 'dev_bearingA.npz'
+    normal_vs_anomaly: 1
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+  Data_10:
+    dataset_root: '/workspace/First/DCASE-GraphDatasets'
+    dataset_normal: 'dev_fanN.npz'
+    dataset_anomaly: 'dev_fanA.npz'
+    normal_vs_anomaly: 1
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+  Data_11:
+    dataset_root: '/workspace/First/DCASE-GraphDatasets'
+    dataset_normal: 'dev_gearboxN.npz'
+    dataset_anomaly: 'dev_gearboxA.npz'
+    normal_vs_anomaly: 1
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+  Data_12:
+    dataset_root: '/workspace/First/DCASE-GraphDatasets'
+    dataset_normal: 'dev_sliderN.npz'
+    dataset_anomaly: 'dev_sliderA.npz'
+    normal_vs_anomaly: 1
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+  Data_13:
+    dataset_root: '/workspace/First/DCASE-GraphDatasets'
+    dataset_normal: 'dev_ToyCarN.npz'
+    dataset_anomaly: 'dev_ToyCarA.npz'
+    normal_vs_anomaly: 1
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+  Data_14:
+    dataset_root: '/workspace/First/DCASE-GraphDatasets'
+    dataset_normal: 'dev_ToyTrainN.npz'
+    dataset_anomaly: 'dev_ToyTrainA.npz'
+    normal_vs_anomaly: 1
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
+  Data_15:
+    dataset_root: '/workspace/First/DCASE-GraphDatasets'
+    dataset_normal: 'dev_valveN.npz'
+    dataset_anomaly: 'dev_valveA.npz'
+    normal_vs_anomaly: 1
+    optimizer: 'Adam'
+    criterion: 'CrossEntropyLoss'
